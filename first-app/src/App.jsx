@@ -33,6 +33,18 @@ function App() {
             </ul>
         </div>
     </nav>
+    <div className="main">
+        <h1>Welcome to Vite + React</h1>
+        <div className="card"><img src={viteLogo}alt="Logo"></img></div>
+        <div className="card"><img src={reactLogo}alt="Logo"></img></div>
+        <div className="card"><img src={viteLogo}alt="Logo"></img></div>
+        <div className="card"><img src={reactLogo}alt="Logo"></img></div>
+        <div className="card"><img src={viteLogo}alt="Logo"></img></div>
+        <div className="card"><img src={reactLogo}alt="Logo"></img></div>
+        <div className="card"><img src={viteLogo}alt="Logo"></img></div>
+        <div className="card"><img src={reactLogo}alt="Logo"></img></div>
+
+    </div>
 
 </body>
     </>

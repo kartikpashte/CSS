@@ -5,6 +5,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Movie from "./Movie"
 import './style.css'
 
 function App() {
@@ -33,16 +34,13 @@ function App() {
             </ul>
         </div>
     </nav>
+
     <div className="main">
-        <h1>Welcome to Vite + React</h1>
-        <div className="card"><img src={viteLogo}alt="Logo"></img></div>
-        <div className="card"><img src={reactLogo}alt="Logo"></img></div>
-        <div className="card"><img src={viteLogo}alt="Logo"></img></div>
-        <div className="card"><img src={reactLogo}alt="Logo"></img></div>
-        <div className="card"><img src={viteLogo}alt="Logo"></img></div>
-        <div className="card"><img src={reactLogo}alt="Logo"></img></div>
-        <div className="card"><img src={viteLogo}alt="Logo"></img></div>
-        <div className="card"><img src={reactLogo}alt="Logo"></img></div>
+        <h1>Welcome to Movie App</h1>
+        <div className="wrapper">
+        <Movie />
+      </div>
+        {/* <div className="card"><img src={viteLogo}alt="Logo"></img></div> */}
 
     </div>
 

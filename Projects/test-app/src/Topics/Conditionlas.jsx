@@ -3,8 +3,7 @@ const Conditionals = () => {
     return(
         <>
      
-            {(mode) ? <h1>Dark Mode</h1> : <h1>Light Mode</h1>}    
-            <button>Toggle Mode</button>               
+            {(mode) ? <h1>Dark Mode</h1> : <h1>Light Mode</h1>}      
         </>
     )
 }

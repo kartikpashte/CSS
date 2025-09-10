@@ -148,7 +148,7 @@ body{
             text-align: left;
         }
         button{
-            background-color: #94e6fa;
+            background-color: #ff6b6b;
             border: none;
             font-size: 14px;
             padding: 8px 14px;
@@ -157,6 +157,6 @@ body{
             cursor: pointer;
             transition: background-color 0.3s;
             &:hover {
-                background-color: #ff9494;
+                background-color: rgb(59, 177, 255);
             }
         }

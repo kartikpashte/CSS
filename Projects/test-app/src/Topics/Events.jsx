@@ -3,7 +3,7 @@ import Button from './Button.jsx'
 
 const Events = () => {
     const logIn = () => {
-        console.log('User logged in')
+        alert('User logged in')
     }
     const register = () => {
         alert('User registered')
@@ -11,6 +11,7 @@ const Events = () => {
   return (
     <>
     <Button func={logIn} text="Log In"/>
+    <Button func={()=>{alert('User logged in')}} text="Log In 2"/>
     <Button func={register} text="Register"/>
     </>
   )

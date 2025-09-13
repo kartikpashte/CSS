@@ -11,7 +11,7 @@ const Events = () => {
   return (
     <>
     <Button func={logIn} text="Log In"/>
-    <Button func={()=>{alert('User logged in')}} text="Log In 2"/>
+    <Button func={()=>{alert('logged in')}} text="Log In 2"/>
     <Button func={register} text="Register"/>
     </>
   )

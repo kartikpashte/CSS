@@ -13,18 +13,16 @@ return (
             return(
             <div className="card">
             <img src={movie.Poster} alt="" />
-            <div className="lower">
+                <div className="lower">
+
                 <h2>Name :{movie.Title}</h2>
                 <p>Year :{movie.Year}</p>
-                <button>Read more</button>
+                <button onClick={()=>{alert(`Title : ${movie.Title}\nYear : ${movie.Year}`)}}>Read more</button>
+                </div>
 
-            </div>
-        </div>
-            )
-        })
+            </div>)})
     }
 
-        
 
     </div>
     </>

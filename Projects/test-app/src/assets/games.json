@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": " Gili Danda",
+        "pictures": "src/assets/game1.jfif"
+    },
+    {
+        "id": 2,
+        "name": "Pitthu",
+        "pictures": "/src/assets/game2.jfif"
+    },
+    {
+        "id": 3,
+        "name": "Kabaddi",
+        "pictures": "src/assets/game3.jfif"
+    },
+    {
+        "id": 4,
+        "name": "Langdi",
+        "pictures": "src/assets/game4.jfif"
+    },
+    {
+        "id": 5,
+        "name": "Chain",
+        "pictures": "src/assets/game5.png"
+    }
+]

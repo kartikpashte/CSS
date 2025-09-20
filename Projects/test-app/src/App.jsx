@@ -3,6 +3,8 @@ import Conditionals from './Topics/Conditionlas.jsx'
 import Car from './Topics/Car.jsx'
 import Rest from './Topics/Rest.jsx'
 import Events from './Topics/Events.jsx'
+import Text from './Topics/Text.jsx'
+import Games from './Topics/Games.jsx'
 
 function App() {
 
@@ -12,7 +14,9 @@ function App() {
     {/* <Conditionals/> */}
     {/* <Car name="BMW" colour="red"/> */}
     {/* <Rest name="BMW" brand="Ford"/> */}
-    <Events/>
+    {/* <Events/> */}
+    {/* <Text/> */}
+    <Games/>
     </>
   )
 }

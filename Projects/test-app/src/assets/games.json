@@ -2,26 +2,31 @@
     {
         "id": 1,
         "name": " Gili Danda",
-        "pictures": "src/assets/game1.jfif"
+        "pictures": "src/assets/game1.png",
+        "description": "Gilli Danda is a traditional sport played in India, similar to cricket and baseball. It involves a small wooden stick (gilli) and a larger stick (danda). The objective is to hit the gilli with the danda and score points by running between two designated areas."
     },
     {
         "id": 2,
         "name": "Pitthu",
-        "pictures": "/src/assets/game2.jfif"
+        "pictures": "/src/assets/game2.png",
+        "description": "Pitthu, also known as Lagori, is a popular outdoor game in India. It involves stacking flat stones (pitthu) and trying to knock them down with a ball. The team that successfully knocks down the stack and rebuilds it while avoiding being hit by the opposing team's ball wins the game."
     },
     {
         "id": 3,
         "name": "Kabaddi",
-        "pictures": "src/assets/game3.jfif"
+        "pictures": "src/assets/game3.png",
+        "description": "Kabaddi is a contact team sport that originated in India. It involves two teams, where one team sends a 'raider' into the opposing team's half to tag as many defenders as possible and return to their own half without being tackled. The game requires agility, strength, and strategy."
     },
     {
         "id": 4,
         "name": "Langdi",
-        "pictures": "src/assets/game4.jfif"
+        "pictures": "src/assets/game4.png",
+        "description": "Langdi is a traditional Indian game that involves hopping on one leg while trying to tag opponents. The game is played in a designated area, and players must maintain their balance while attempting to catch others. It is a fun and energetic game that promotes agility and coordination."
     },
     {
         "id": 5,
         "name": "Chain",
-        "pictures": "src/assets/game5.png"
+        "pictures": "src/assets/game5.png",
+        "description": "Chain is a popular outdoor game in India that involves forming a human chain to catch opponents. Players hold hands to create a chain, and the objective is to tag or catch members of the opposing team while avoiding being caught themselves. The game requires teamwork, strategy, and quick reflexes."
     }
 ]

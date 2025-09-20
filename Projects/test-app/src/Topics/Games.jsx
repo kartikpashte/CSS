@@ -12,6 +12,7 @@ const Games = () => {
                     <div className='card' key={game.id}>
                         <h2>{game.name}</h2>
                         <img src={game.pictures} alt="" />
+                        <p>{game.description}</p>
                 
                     </div>
                 )

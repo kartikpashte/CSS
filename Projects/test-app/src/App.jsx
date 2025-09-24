@@ -5,6 +5,7 @@ import Rest from './Topics/Rest.jsx'
 import Events from './Topics/Events.jsx'
 import Text from './Topics/Text.jsx'
 import Games from './Topics/Games.jsx'
+import Form from './Topics/Form.jsx'
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
     {/* <Rest name="BMW" brand="Ford"/> */}
     {/* <Events/> */}
     {/* <Text/> */}
-    <Games/>
+    {/* <Games/> */}
+    <Form/>
     </>
   )
 }

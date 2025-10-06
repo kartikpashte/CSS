@@ -20,12 +20,12 @@ const Form = () => {
   return (
     <div>
         <form>
-            <label htmlFor="uname"></label>
+            <label htmlFor="uname">Your Name:</label>
             <input onChange={change} value={name} type="text" id='uname' placeholder='Enter Name' />
             <br />
 
             <input onClick={count} type="submit" value={"count"} />
-            <p>number of letters writen is {letter}</p>
+            <h2>number of letters writen is {letter}</h2>
         </form>
     </div>
   )

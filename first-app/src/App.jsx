@@ -6,8 +6,13 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Movie from "./Movie"
-import './style.css'
-import Form from './topic/Form'
+// import './style.css'
+// import Form from './topic/Form'
+import Counterapp from './topic/Counterapp.jsx'
+// import './App.css'
+import './index.css'
+import Button from './topic/Button.jsx'
+import Calc from './topic/Calc.jsx'
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -55,7 +60,10 @@ function App() {
 
   return (
     <>
-    <Form/>
+    {/* <Form/> */}
+    {/* <Button/> */}
+    {/* <Counterapp/> */}
+    {<Calc/>}
     </>
   )
 }

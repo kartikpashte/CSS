@@ -1,4 +1,4 @@
-/* body{
+ body{
             margin: 0%;
             padding: 0%;
         }
@@ -159,7 +159,7 @@
             &:hover {
                 background-color: rgb(59, 177, 255);
             }
-        } */
+        }
  /* body{
     background-color: lightblue;
     font-family: Arial, sans-serif;
@@ -268,11 +268,11 @@ h1{
     color: gainsboro;
     font-weight: 700;
     text-transform: uppercase;
-} */
+} 
 
 
 
-body {
+/* body {
   background-color: #f5f5f5;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -334,4 +334,4 @@ button.equals:hover {
 
 button.zero {
   grid-column: span 2;
-}
+} */

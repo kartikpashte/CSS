@@ -51,7 +51,7 @@ function App() {
                 </div>
 
             </body>
-            <Home />
+            {/* <Home /> */}
         </>
     )
 }

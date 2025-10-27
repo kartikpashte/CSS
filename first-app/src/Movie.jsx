@@ -17,7 +17,7 @@ return (
 
                 <h2>Name :{movie.Title}</h2>
                 <p>Year :{movie.Year}</p>
-                <button onClick={()=>{alert(`Title : ${movie.Title}\nYear : ${movie.Year}`)}}>Read more</button>
+                <button onClick={()=>{alert(`🎬Title : ${movie.Title}\n📅Year : ${movie.Year}`)}}>Read more</button>
                 </div>
 
             </div>)})

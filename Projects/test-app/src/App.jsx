@@ -6,7 +6,8 @@ import './App.css'
 // import Text from './Topics/Text.jsx'
 // import Games from './Topics/Games.jsx'
 // import Form from './Topics/Form.jsx'
-import CounterApp from './Topics/CounterApp.jsx'
+// import CounterApp from './Topics/CounterApp.jsx'
+import Numgame from './Topics/Numgame.jsx'
 function App() {
 
   return (
@@ -19,7 +20,8 @@ function App() {
     {/* <Text/> */}
     {/* <Games/> */}
     {/* <Form/> */}
-    <CounterApp/>
+    {/* <CounterApp/> */}
+    <Numgame/>
     </>
   )
 }

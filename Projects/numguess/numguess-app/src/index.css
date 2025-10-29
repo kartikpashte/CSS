@@ -1,0 +1,130 @@
+/* === Reset & Base Styles === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Wrapper === */
+.wrapper {
+  background: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper:hover {
+  transform: scale(1.02);
+}
+
+/* === Headings === */
+.wrapper h1 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* === Inputs Section === */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+main span {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* === Buttons === */
+button {
+  background: #4facfe;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #00c6fb;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* === Result Message === */
+#result {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  min-height: 1.5em;
+}
+
+/* === Feedback Colors === */
+#result:empty::before {
+  content: "Start guessing!";
+  color: #888;
+  font-weight: 400;
+}
+
+#result {
+  color: #333;
+}
+
+#result:contains("right") {
+  color: #2ecc71;
+}
+
+#result:contains("low"),
+#result:contains("high") {
+  color: #e67e22;
+}
+
+#result:contains("No attempts") {
+  color: #e74c3c;
+}
+
+/* === Responsive === */
+@media (max-width: 400px) {
+  .wrapper {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}

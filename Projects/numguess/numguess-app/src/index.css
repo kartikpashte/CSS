@@ -1,130 +1,158 @@
-/* === Reset & Base Styles === */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-}
-
+/* ======== GLOBAL STYLES ======== */
 body {
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
-  min-height: 100vh;
+  margin: 0;
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  font-family: "Inter", "Poppins", sans-serif;
+  color: #f8f9fa;
 }
 
-/* === Wrapper === */
-.wrapper {
-  background: #ffffff;
-  padding: 2rem 3rem;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+/* ======== MAIN WRAPPER ======== */
+.warpper {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2.5rem;
+  width: 380px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   text-align: center;
-  width: 350px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
-.wrapper:hover {
-  transform: scale(1.02);
+.warpper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
 
-/* === Headings === */
-.wrapper h1 {
-  color: #333;
-  margin-bottom: 1.5rem;
+/* ======== HEADER ======== */
+h1 {
   font-size: 1.5rem;
+  color: #00d4ff;
+  margin-bottom: 1.8rem;
+  font-weight: 600;
 }
 
-/* === Inputs Section === */
+/* ======== RANGE INPUT SECTION ======== */
 main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 main span {
+  color: #ccc;
   font-size: 0.9rem;
-  color: #444;
 }
 
-input[type="number"],
+/* ======== INPUT FIELDS ======== */
 input[type="text"] {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.3rem;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-  outline: none;
-  transition: all 0.2s ease;
+  width: 80px;
+  padding: 0.45rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: all 0.25s ease;
 }
 
-input[type="number"]:focus,
 input[type="text"]:focus {
-  border-color: #4facfe;
-  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+  outline: none;
+  border-color: #00d4ff;
+  background: rgba(255, 255, 255, 0.12);
 }
 
-/* === Buttons === */
+/* Main guess input field */
+.warpper > input[type="text"] {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+
+/* ======== BUTTON STYLES ======== */
 button {
-  background: #4facfe;
+  background: linear-gradient(90deg, #00d4ff, #0078ff);
   color: white;
   border: none;
-  padding: 0.6rem 1.2rem;
-  margin: 0.5rem;
+  padding: 0.7rem 1.3rem;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin: 0.3rem;
   transition: all 0.3s ease;
 }
 
 button:hover {
-  background: #00c6fb;
+  background: linear-gradient(90deg, #00e0ff, #006eff);
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.5);
+  transform: translateY(-2px);
 }
 
 button:active {
-  transform: scale(0.97);
+  transform: translateY(0);
+  box-shadow: none;
 }
 
-/* === Result Message === */
+/* ======== RESULT TEXT ======== */
 #result {
   margin-top: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  min-height: 1.5em;
+  min-height: 24px;
+  transition: all 0.3s ease;
 }
 
-/* === Feedback Colors === */
-#result:empty::before {
-  content: "Start guessing!";
-  color: #888;
-  font-weight: 400;
+/* Dynamic feedback colors */
+#result.success {
+  color: #00ff99;
+}
+
+#result.warning {
+  color: #ffcc00;
+}
+
+#result.error {
+  color: #ff4f4f;
+}
+
+/* ======== ANIMATIONS ======== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #result {
-  color: #333;
+  animation: fadeIn 0.4s ease;
 }
 
-#result:contains("right") {
-  color: #2ecc71;
-}
-
-#result:contains("low"),
-#result:contains("high") {
-  color: #e67e22;
-}
-
-#result:contains("No attempts") {
-  color: #e74c3c;
-}
-
-/* === Responsive === */
-@media (max-width: 400px) {
-  .wrapper {
+/* ======== RESPONSIVE ======== */
+@media (max-width: 420px) {
+  .warpper {
     width: 90%;
-    padding: 1.5rem;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
   }
 }

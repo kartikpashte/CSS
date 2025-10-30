@@ -38,7 +38,7 @@ const Numgame = () => {
         setAttempts(5);
     }
     return (<>
-        <h1>Number Guessing Game</h1>
+        <h1 className='heading'>Number Guessing Game</h1>
         
         <div className='warpper'>
             <h1>Attempts Remaining : {attempts} </h1>

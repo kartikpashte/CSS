@@ -142,6 +142,12 @@ h3 {
   margin-top: 25px;
   color: #00d4ff;
 }
+.heading {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #81eb86;
+}
 
 /* ======== ANIMATIONS ======== */
 @keyframes fadeIn {

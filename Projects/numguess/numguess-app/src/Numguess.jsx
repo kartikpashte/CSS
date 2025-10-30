@@ -38,8 +38,10 @@ const Numgame = () => {
         setAttempts(5);
     }
     return (<>
+        <h1>Number Guessing Game</h1>
+        
         <div className='warpper'>
-            <h1>Attempts Remaining:{attempts} </h1>
+            <h1>Attempts Remaining : {attempts} </h1>
             <main>
                 <span>Start From</span>
                 <input value={from} onChange={(e) => { setFrom(e.target.value) }} type="text" placeholder="From" />
@@ -51,7 +53,7 @@ const Numgame = () => {
             <button onClick={resetGame}>Reset</button>
             <h2 id='result'>{result}</h2>
         </div>
-        
+
         <div className='Instructions'>
             <h3>Instructions:</h3>
             <ul>

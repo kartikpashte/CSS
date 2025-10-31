@@ -6,6 +6,7 @@ body {
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  background-size: 400% 400%;
   font-family: "Inter", "Poppins", sans-serif;
   color: #f8f9fa;
 }
@@ -110,19 +111,6 @@ button:active {
   font-weight: 600;
   min-height: 24px;
   transition: all 0.3s ease;
-}
-
-/* Dynamic feedback colors */
-#result.success {
-  color: #00ff99;
-}
-
-#result.warning {
-  color: #ffcc00;
-}
-
-#result.error {
-  color: #ff4f4f;
 }
 .Instructions {
   font-size: 15px;

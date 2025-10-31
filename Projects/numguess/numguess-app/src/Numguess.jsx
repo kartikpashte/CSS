@@ -5,30 +5,29 @@ const Numgame = () => {
     let [from, setFrom] = useState(0);
     let [to, setTo] = useState(100);
     let [attempts, setAttempts] = useState(5);
-    const [number, setNumber] = useState(Math.floor(Math.random() * 10) + 1);
+    const [number, setNumber] = useState(Math.floor(Math.random() * (to)) + 1);
     console.log(number);
 
     const [guess, setGuess] = useState();
     const [result, setResult] = useState("");
     const checkGuess = () => {
         if (attempts <= 0) {
-            setResult("No attempts left! Please reset the game.");
+            setResult("😞 No attempts left! Please reset the game.");
             return;
         }
-        attempts--;
-        setAttempts(attempts);
+        setAttempts(prev => prev - 1);
         if (guess == number) {
-            setResult("You guessed it right!");
+            setResult("✅ You guessed it right!");
         } else if (number > guess) {
-            setResult("Too low! Try again.");
+            setResult("⬇️ Too low! Try again.");
         } else if (guess < from || guess > to) {
-            setResult(`Please enter a number between ${from} and ${to}.`);
+            setResult(`⚠️ Please enter a number between ${from} and ${to}.`);
         }
         else if (isNaN(guess)) {
-            setResult("this is not a number");
+            setResult("❌ this is not a number");
         }
         else {
-            setResult("Too high! Try again.");
+            setResult("⬆️ Too high! Try again.");
         }
     }
     const resetGame = () => {

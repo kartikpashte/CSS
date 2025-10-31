@@ -15,6 +15,11 @@ const Numgame = () => {
             setResult("😞 No attempts left! Please reset the game.");
             return;
         }
+    
+        if(isNaN(guess)) {
+            setResult("⚠️ Please enter a number.");
+            return;
+        }else{
         setAttempts(prev => prev - 1);
         if (guess == number) {
             setResult("✅ You guessed it right!");
@@ -23,12 +28,10 @@ const Numgame = () => {
         } else if (guess < from || guess > to) {
             setResult(`⚠️ Please enter a number between ${from} and ${to}.`);
         }
-        else if (isNaN(guess)) {
-            setResult("❌ this is not a number");
-        }
         else {
             setResult("⬆️ Too high! Try again.");
-        }
+        }  
+    }
     }
     const resetGame = () => {
         setNumber(Math.floor(Math.random() * (to - from + 1)) + parseInt(from));

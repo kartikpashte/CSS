@@ -19,6 +19,7 @@ body {
   border-radius: 16px;
   padding: 2.5rem;
   width: 380px;
+  padding-bottom: 20px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   text-align: center;
   transition: all 0.3s ease;

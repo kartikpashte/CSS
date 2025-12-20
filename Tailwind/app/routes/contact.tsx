@@ -1,7 +1,10 @@
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
+import Navbar from "~/components/Navbar";
 
 export default function Example() {
   return (
+    <>
+      <Navbar />
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div
         aria-hidden="true"
@@ -156,5 +159,7 @@ export default function Example() {
         </div>
       </form>
     </div>
+    </>
+
   )
 }

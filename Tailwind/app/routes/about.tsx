@@ -1,3 +1,4 @@
+import Navbar from "~/components/Navbar";
 const links = [
   { name: 'Open roles', href: '#' },
   { name: 'Internship program', href: '#' },
@@ -13,6 +14,8 @@ const stats = [
 
 export default function Example() {
   return (
+    <>
+    <Navbar />
     <div className="relative isolate overflow-hidden bg-white py-24 sm:py-32">
       <img
         alt=""
@@ -70,5 +73,7 @@ export default function Example() {
         </div>
       </div>
     </div>
+    </>
+
   )
 }
